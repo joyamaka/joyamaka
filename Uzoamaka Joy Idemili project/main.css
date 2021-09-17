@@ -1,0 +1,786 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Crafty Girls', cursive;
+    line-height: 1.5;
+}
+/*======Nav Bar====*/
+#navbar{
+    width: 100px;
+    height: 10px;
+    margin: 50px 10px 10px 20px;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+}
+.bar{
+    background: azure;
+    border: 10%;
+    transition: 4s;
+}
+#bar1{
+    width: 50px;
+    height: 10px;
+    transform: translateY(-4px);
+}
+#bar2{
+    width: 50px;
+    height: 10px;
+}
+#bar3{
+    width: 50px;
+    height: 10px;
+    transform: translateY(4px);
+}
+.change .bar{
+    background: white;
+}
+.change #bar1{
+    transform: translateY(6px);
+    rotate: z(45deg);
+}
+.change #bar3{
+    transform: translateY(-15px);
+    rotate: z(-45deg);
+}
+.change #bar2{
+    opacity: 0;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*background: black;*/
+}
+.nav{
+    background: goldenrod;
+    
+}
+.nav li:hover{
+    font-size: 25px;
+    padding-left: 10px;
+}
+.nav li{
+    margin: 20px 10px 10px 20px;
+    padding-top: 10px;
+    list-style-type: none;
+}
+.nav{
+    display: none;
+    
+}
+.change-btn{
+    display: block;
+}
+
+
+/*========end of navbar======*/
+/*=========homepage==========*/
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), 
+    url('images/bar.jpg') center/cover no-repeat fixed;
+    margin-top: auto; 
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+.main .name{
+    color: azure;
+    font-size: 50px;
+    text-shadow: 2px 2px goldenrod;
+}
+/*===========End of homepage=====*/
+/*======About US Section========*/
+.about_head{
+    width: 100%;
+    background-color: goldenrod;
+    height: 100px;
+}
+.image{
+    display: inline-flex;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 60px;
+   
+}
+img{
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid goldenrod;
+}
+.aboutus{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5%;
+    text-transform: uppercase;
+}
+
+.about{
+    margin: 30px 0;
+    display: flex;
+
+}
+
+.about-icon .fas, .fa{
+    font-size: 50px;
+    color: goldenrod;
+    margin-right: 30px;
+    margin-left: 10px;
+
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: goldenrod;
+    font-size: 25px;
+
+}
+.about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+
+}
+.about-icon:hover .fa,
+.about-icon:hover .fas,
+.about-subtitle:hover{
+    transition: transform 2s ease, color 2s ease;
+    transform: translateY(-10px);
+    color:peru;
+    cursor: pointer;
+}
+@media screen and (min-width: 576px){
+    .about_us{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+@media screen and (min-width: 972px){
+    .about{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+}
+/*=====End of About Us=====*/
+/*=======Menu Section=======*/
+.menu_head{
+    width: 100%;
+    background-color: goldenrod;
+    height: 100px;
+}
+.menupage{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 5%;
+}
+.menu-image{
+    min-height: 500px;
+    background: url(images/fruity.jpg) center/cover fixed no-repeat;
+}
+.menu-text{
+    min-height: 100px;
+    align-items: center;
+    background: peachpuff;
+    columns: black;
+    padding: 40px 0;
+}
+.menu-txt{
+    width: 90%;
+    margin: 0 auto;
+}
+.menu-text p{
+    margin: 20px 0;
+    line-height: 2; 
+}
+.menu-text a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 150px;
+    font-weight: bold;
+    background: black;
+    color: peachpuff;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.menu-text a:hover{
+    color: white;
+    background: goldenrod;
+    border: none;
+}
+#menulist{
+    background-color: peachpuff;
+    width: 100%;
+    height: auto;
+    display: none;
+    
+}
+.slideshow{
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    align-items: center;
+    max-width: 1000px;
+    
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.s-btn{
+    width: auto;
+    margin: 10px;
+    
+}
+
+.nav-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    
+}
+
+.slidebar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid azure;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+   
+}
+.slidebar:hover{
+    background: azure;
+}
+
+input[name="s"]{
+    position: absolute;
+    visibility: hidden;
+
+} 
+.slides{
+    text-align: center;
+    display: flex;
+    
+}
+.slide{
+    
+    transition: 0.6s;
+}
+.slide img{
+    width: 465px;
+    height: 600px;
+}
+#s1:checked ~ .r1{
+    margin-left: 0%;
+}
+#s2:checked ~ .r1{
+    margin-left: -99%;
+}
+#s3:checked ~ .r1{
+    margin-left: -199%;
+}
+#s4:checked ~ .r1{
+    margin-left: -299%;
+}
+#s5:checked ~ .r1{
+    margin-left: -398%;
+}
+#s6:checked ~ .r1{
+    margin-left: -498%;
+}
+#s7:checked ~ .r1{
+    margin-left: -598%;
+}
+/*========End of Menu Section=======*/
+/*=======Footer=====*/
+#social-icons{
+    height: 100px;
+    background: goldenrod;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+#social-icons a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease;
+}
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+    color: #38a1f3;
+}
+.instagram{
+    color: #e1306c;
+}
+.plus{
+    color: #db4a39;
+}
+
+/*=====end of footer==============*/
+/* =======services page ============*/
+.services-page{
+    background: url(images/relaxsign.jpg) center/cover fixed no-repeat;
+    min-height: 100vh;
+    padding: 60px 0;
+}
+.services-body{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.services-head{
+    text-align: center;
+    color: azure;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+.border{
+    width: 160px;
+    height: 2px;
+    background: peachpuff;
+    margin: 40px auto;
+
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.services{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: azure;
+    cursor: pointer;
+
+}
+.service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid peachpuff;
+    color: peachpuff;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.service-icon i{
+    line-height: 65px;
+    transform: rotate(-45deg);
+    font-size: 30px;
+
+}
+.services:hover .service-icon{
+    background: peachpuff;
+    color: goldenrod;
+}
+.service-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: antiquewhite;
+
+}
+.service-info{
+    font-size: 15px;
+
+}
+@media screen and (max-width: 960px){
+    .services{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 768px){
+    .services{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 480px){
+    .services{
+        max-width: 45%;
+    }
+}
+/* ======end of services page =============*/
+/* =========contact Us section============ */
+
+.contact-head .contacts-title{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+.contact-head p{
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    text-underline-position: none;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 3%;
+    letter-spacing: 2px;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.contact-icons{
+    background: rgba(136,133,133,0.5);
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33.33% -20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+
+}
+.icon{
+    font-size: 40px;
+    background:none;
+    line-height: 100px;
+    text-align: center;
+    color: chocolate;
+    transition: 0.3s linear;
+}
+.contact-icons:hover .icon{
+    background: none;
+    color: peachpuff;
+    transform: scale(1.6);
+}
+
+.contact-icons p{
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: 0.3s linear;
+
+}
+.contact-icons:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px){
+    .contact-info{
+        flex-direction: column;
+    }
+    .contact-icons{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+.form{
+    text-align: center;
+    padding-top: 20px;
+}
+.form h3{
+    text-align: center;
+    color: goldenrod;
+    text-transform: capitalize;
+
+
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136,133,133,0.5);
+    outline: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input::placeholder{
+    color:peachpuff;
+
+}
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136,133,133,0.5);
+    outline: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea::placeholder{
+    color:peachpuff;
+}
+
+input[type=submit]{
+    width: 40%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3%;
+    border: 2px solid goldenrod;
+    color: goldenrod;
+}
+
+input[type=submit]:hover{
+    border: 3px double black;
+    color: black;
+    cursor: pointer;
+}  
+
+ /*========end of contact us section=========== */
+ /* ===============review page=============== */
+.reviews-top{
+    margin: auto;
+    padding: 0 16px;
+    text-align: center;
+    max-width: 1200px;
+}
+.rev-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: chocolate;
+    margin-bottom: 10px;
+    
+
+}
+.note{
+    font-size: 18px;
+    color: goldenrod;
+    font-style: italic;
+}
+.reviews{
+    margin: 32px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.review{
+    margin: 0 16px;
+    min-width: 300px;
+    flex: 1;
+
+}
+
+.review-head{
+    margin: 28px auto;
+    width: 150px;
+    height: 150px;
+
+}
+.review-head img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px pink;
+    border: none;
+}
+
+.review-body{
+    background-color: rgb(238, 238, 238);
+    padding: 40px;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+}
+.reviewname{
+    font-size: 24px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 4px;
+}
+.reviewplace{
+    color: coral;
+    font-style: italic;
+}
+.reviewrating{
+    color: darkorange;
+    margin: 16px 0;
+}
+.review-info{
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.btn-1{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.rev-btn{
+    padding: 15px;
+    width: 150px;
+    background-color: orange;
+    color: papayawhip;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Crafty Girls', cursive;
+    
+}
+.rev-btn:hover{
+    color: black;
+    cursor: pointer;
+    background-color: darksalmon;
+}
+#rate-comment{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    display: none;
+
+}
+#rate-comment h4{
+    margin: 0 0 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: chocolate;
+} 
+
+ /* ===============end of review page========== */
+/* =================gallery page================ */
+
+.gallery-section{
+    width: 100%;
+    background: peachpuff;
+    padding: 60px 0;
+   
+}
+.gallery-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: peru;
+
+}
+.gallery_center{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.g-border{
+    width: 180px;
+    height: 5px;
+    background: goldenrod;
+    margin: 60px auto;
+}
+
+.gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-section .imgbox{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .imgbox img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    border: none;
+   
+}
+.gallery-section .imgbox:hover img{
+    transform: scale(2);
+}
+@media screen and (max-width: 960px){
+    .gallery-section .imgbox{
+        flex: 33.33%;
+    }
+}
+@media screen and (max-width: 768px){
+    .gallery-section .imgbox{
+        flex: 50%;
+    }
+}
+@media screen and (max-width: 480px){
+    .gallery-section .imgbox{
+        flex: 100%;
+    }
+}
+/* ==========end of gallery================== */
+
+#submitpage{
+    background: url(images/drinks.jpg) center/cover no-repeat fixed;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+#sibmitpage .submit{
+    color: azure;
+    font-size: 50px;
+    text-shadow: 2px 2px goldenrod;
+}
+.submit h1{
+    font-size: 40px;
+}
+.submit p{
+    font-style: italic;
+    font-size: 20px;
+}

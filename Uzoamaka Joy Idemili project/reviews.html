@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JT-Reviews</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/f00970d613.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background: peachpuff;
+            height: 100%;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--Navbar=====-->
+    <div id="menubar" class="menubar">
+        <div id="navbar" onclick="onclickmenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+            <ul id="nav" class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="reviews-top">
+        <h2 class="rev-title">Our guests love us</h2>
+        <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ex.</p>
+
+        <div class="reviews">
+            <article class="review">
+                <div class="review-head">
+                    <img src="images/member1.jpg"
+                    width="250px">
+                </div>
+                <div class="review-body">
+                    <div class="reviewname">Rose D.</div>
+                    <div class="reviewplace">Lagos, Nigeria</div>
+                    <div class="reviewrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Facere, totam? Hic accusantium consectetur recusandae nulla!</div>
+                </div>
+            </article>
+            <article class="review">
+                <div class="review-head">
+                    <img src="images/member2.jpg"
+                    width="250px">
+                </div>
+                <div class="review-body">
+                    <div class="reviewname">Michael A.</div>
+                    <div class="reviewplace">England, UK</div>
+                    <div class="reviewrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Facere, totam? Hic accusantium consectetur recusandae nulla!</div>
+                </div>
+            </article>
+            <article class="review">
+                <div class="review-head">
+                    <img src="images/member3.jpg"
+                    width="250px">
+                </div>
+                <div class="review-body">
+                    <div class="reviewname">Susan M.</div>
+                    <div class="reviewplace">Abuja, Nigeria</div>
+                    <div class="reviewrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Facere, totam? Hic accusantium consectetur recusandae nulla!</div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="btn-1">
+    <button class="rev-btn" onclick="mycomments()">Add Comment</button>
+    </div>
+
+    <div id="rate-comment">
+        <form action="submit.html" name="nxtform" onsubmit="return(validatedata())";>
+            <h4>Leave a Comment</h4>
+            <input type="text" name="rates" class="comment" id="rating-value" placeholder="Rating Value (1 lowest to 5 highest),.."><br>
+            <input type="text" name="name" class="comment" placeholder="Name">
+            <textarea rows="5" cols="50" class="comment" name="comment" placeholder="Add Comment"></textarea><br>
+            <input type="submit" value="comment">
+        </form>
+    </div>
+
+    <footer id="social-icons">
+        <a href="#"><i class="fab fa-facebook facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram instagram"></i></a>
+        <a href="#"><i class="fab fa-google-plus plus"></i></a>
+    </footer>
+
+</body>
+</html>
